@@ -12,16 +12,26 @@ function handleSearch(e) {
   setSearch(search);
   console.log(search) };
 
-function handleClick() {
-console.log("clicked")
+async function handleClick() {
+  const response = await fetch(`SELECT * FROM customers WHERE language = $1`,[search]);
+
+  console.log(response)
+
 }
 
   return (
-    <div className="App">
-      <SearchBarInput onChange={handleSearch} />
+    <div className="app">
+     <div className = "postsContainer">
+     THIS IS TO SEARCH POSTS
+     <SearchBarInput onChange={handleSearch} />
       <Button onClick={handleClick}/>
-
-    </div>
+      </div>
+     
+      <div className = "addPostsContainer">
+      THIS IS TO ADD POSTS
+      </div>
+      </div>
+    
   );
 }
 
