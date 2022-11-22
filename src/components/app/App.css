@@ -1,18 +1,24 @@
 @font-face {
     font-family: 'Ubuntu';
-    src: url('../../../fonts_images/UbuntuMono-Regular.ttf');
-}
+    src: url('../../../fonts_images/UbuntuMono-Regular.ttf'); }
+
+ @font-face {
+    font-family: 'Monoton';
+    src: url('../../../fonts_images/Monoton-Regular.ttf'); }
+ 
+
 :root{
     --highlight: #ff8e72;
     --backgroundColor: #EFF0F2;
     --darkColor: #131200;
     --secondHighlight: #C2D8B9;
     --textFont: 'Ubuntu';
+    --titleFont: 'Monoton';
 
 }
 
 .postsContainer{
-    font-family: var(--textFont);
+    font-family: var(--titleFont);
     background-color: var(--backgroundColor);
     height: 100vh;
     width: 100vw;
@@ -21,6 +27,10 @@
     align-items: center;
     align-content: center;
 }
+
+
+
+
 .addPostsContainer{
     background-color: blanchedalmond;
     height: 100vh;
