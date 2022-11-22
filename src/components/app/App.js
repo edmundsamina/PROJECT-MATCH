@@ -13,8 +13,8 @@ function handleSearch(e) {
   console.log(search) };
 
 async function handleClick() {
-  const response = await fetch(`SELECT * FROM customers WHERE language = $1`,[search]);
-
+  const responseJSON = await fetch('http://localhost:3001/api/customer/1');
+  const response = await responseJSON.json();
   console.log(response)
 
 }
