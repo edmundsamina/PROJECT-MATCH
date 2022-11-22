@@ -1,6 +1,6 @@
 import './header.css'
 
-function Header() {
+function Header(props) {
     return (
       <div className="header">
       <ul>

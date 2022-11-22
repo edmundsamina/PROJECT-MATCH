@@ -1,9 +1,9 @@
 import './input.css'
-function SearchBarInput({ onChange }) {
+function SearchBarInput(props) {
   return (
     <div className="search-bar-input">
       <input
-        onChange={onChange}
+        onChange={props.onChange}
     
       />
     </div>
