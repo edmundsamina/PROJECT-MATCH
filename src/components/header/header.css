@@ -1,0 +1,24 @@
+/* :root{
+    --highlight: #ff8e72;
+    --backgroundColor: #EFF0F2;
+    --darkColor: #131200;
+    --secondHighlight: #C2D8B9;
+    --textFont: 'Ubuntu';
+    --titleFont: 'Monoton';
+
+} */
+
+.header {
+
+    color: var(--darkColor);
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: auto;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-right: 20px;
+}

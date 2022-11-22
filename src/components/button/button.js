@@ -1,10 +1,10 @@
 
-
+import './button.css'
 
 
 function Button(props) {
   return (
-    <button className="button" onClick={props.onClick}>
+    <button className={props.text} onClick={props.onClick}>{props.text}
     </button>
   );
 }

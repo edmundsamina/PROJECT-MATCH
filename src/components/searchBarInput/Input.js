@@ -1,4 +1,4 @@
-
+import './input.css'
 function SearchBarInput({ onChange }) {
   return (
     <div className="search-bar-input">

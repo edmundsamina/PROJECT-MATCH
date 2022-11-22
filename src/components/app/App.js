@@ -1,4 +1,4 @@
-
+import Header from '../header/header';
 import './App.css';
 import SearchBarInput from '../searchBarInput/Input';
 import Button from '../button/button';
@@ -13,7 +13,7 @@ function handleSearch(e) {
   console.log(search) };
 
 async function handleClick() {
-  const responseJSON = await fetch('http://localhost:3001/api/customer/1');
+  const responseJSON = await fetch('http://localhost:3001/api/customer/search=$1', [search]);
   const response = await responseJSON.json();
   console.log(response)
 
@@ -21,10 +21,15 @@ async function handleClick() {
 
   return (
     <div className="app">
+    <Header/>
      <div className = "postsContainer">
-     THIS IS TO SEARCH POSTS
-     <SearchBarInput onChange={handleSearch} />
-      <Button onClick={handleClick}/>
+
+     <div className='searchBarContainer'>
+      <h1> bumble </h1>
+      <SearchBarInput onChange={handleSearch} />
+      <Button onClick={handleClick} text = "click me" />
+     </div>
+      
       </div>
      
       <div className = "addPostsContainer">
