@@ -1,0 +1,17 @@
+.formContainer{
+    background-color: aquamarine;
+    width: 800px;
+    height:800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.form{
+    display: flex;
+    height: 50%;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: blueviolet;
+}
