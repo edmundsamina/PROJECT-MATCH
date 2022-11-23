@@ -13,10 +13,10 @@
  
 /* temporary colour scheme and font styling card */
 :root{
-    --highlight: #136207;
+    --highlight: #677F64;
     --backgroundColor: #EFF0F2;
-    --darkColor: #131200;
-    --secondHighlight: #C2D8B9;
+    --darkColor: #000000;
+    --secondHighlight: #e9f1ef;
     --textFont: 'Ubuntu';
     --titleFont: 'Monoton';
     --titleFont2: 'Black-ops-one';
@@ -32,6 +32,7 @@
 
 h1{
     font-family: var(--titleFont3);
+    color: #111827;
     font-size: 80px;
 }
 .searchBarContainer{

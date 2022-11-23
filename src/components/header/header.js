@@ -6,6 +6,7 @@ import Logo from "./logo.js";
 function Header(props) {
   return (
     <div className="header">
+    <Logo/>
       <ul>
         <li>
           {" "}
