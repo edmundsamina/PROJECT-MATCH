@@ -1,5 +1,5 @@
 import './blogImage.css';
-import blogImage1 from './blogImage1.jpg'
+import blogImage1 from '../../fonts_images/istockphoto-583809524-612x612.jpg'
 
 
 

@@ -1,43 +1,27 @@
-/* :root{
-    --highlight: #ff8e72;
-    --backgroundColor: #EFF0F2;
-    --darkColor: #131200;
-    --secondHighlight: #C2D8B9;
-    --textFont: 'Ubuntu';
-    --titleFont: 'Monoton';
-
-} */
 
 .header {
-
     color: var(--darkColor);
     display: flex;
+    /* position: fixed; */
     justify-content: flex-end;
     flex-direction: row;
-    width: auto;
-    padding: 20px;
+    width: 100%;
+    padding: 0.5vh;
 
 }
 
-.headerLeft{
-    flex: 3;
-}
-
-.headerRight {
-    flex: 1.75;
-}
    
-ul {
+.header>ul {
     list-style-type: none;
-    margin: 0;
+    /* margin: 0;
     padding: 10px;
     height: 50px;
-    width: 500px;
+    width: 500px; */
     background-color: var(--backgroundColor);
-    position: fixed;
-    border: solid px;
+    /* position: fixed; */
+    /* border: solid px;
     border-radius: 10px;
-    overflow: hidden;
+    overflow: hidden; */
     font-family: var(--textFont);
 
 

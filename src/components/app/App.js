@@ -24,13 +24,10 @@ function App() {
   }
 
   return (
-    <>
-    
-     <Header />
     <div className="app">
-     
-
+     <Header/>
     
+
       <div className="postsContainer">
         <div className="searchBarContainer">
         
@@ -39,14 +36,14 @@ function App() {
           <SearchBarInput onChange={handleSearch} />
           <Button onClick={handleClick} text="click me" />
         </div>
-         
+        <Posts />
       </div>
-       <Posts />
+      
       {/* second page begins here, maybe make a second component for the next page?  <NewPost />*/ }
-       
+      <NewPost />
     </div>
-    <NewPost />
-    </>
+    
+   
   );
 }
 

@@ -1,18 +1,14 @@
 @font-face {
     font-family: 'Ubuntu';
-    src: url('../../../fonts_images/UbuntuMono-Regular.ttf'); }
+    src: url('../../fonts_images/UbuntuMono-Regular.ttf'); }
 
  @font-face {
     font-family: 'Monoton';
-    src: url('../../../fonts_images/Monoton-Regular.ttf'); }
-        @font-face {
-            font-family: 'Black-ops-one';
-            src: url('../../../fonts_images/BlackOpsOne-Regular.ttf');
-        }
-    
-        @font-face {
+    src: url('../../fonts_images/Monoton-Regular.ttf'); }
+ 
+@font-face {
             font-family: 'Wallpoet';
-            src: url('../../../fonts_images/Wallpoet-Regular.ttf');
+            src: url('../../fonts_images/Wallpoet-Regular.ttf');
         }
  
 /* temporary colour scheme and font styling card */

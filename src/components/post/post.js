@@ -23,7 +23,7 @@ function Post(props) {
 
           <span className="postDate">Posted 1 hour ago</span>
         </div>
-   <p classname="postDes"> sfdjghejgehjdvhfvsnv'lsdkvnd
+   <p className="postDes"> sfdjghejgehjdvhfvsnv'lsdkvnd
     sdvlkjfdnsglfknvfs'klvnsflksnfs'fksdfdsklf
     sdcljsdnsfjsdfnsdjnfds
     glfknvfs'klvnsflksnfs'fksdfdsklvfddd

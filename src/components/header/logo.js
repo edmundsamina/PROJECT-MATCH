@@ -1,5 +1,5 @@
 import './logo.css';
-import logo from './logo1.png';
+import logo from '../../fonts_images/logo1.png';
 
 
 function Logo(props) {
