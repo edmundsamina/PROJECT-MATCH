@@ -1,0 +1,14 @@
+import './logo.css';
+import logo from './logo1.png';
+
+
+function Logo(props) {
+    return (
+        <div> <img id="Logo" src={logo} alt="Logo" />
+      </div>
+    )}
+
+
+
+   export default Logo;
+

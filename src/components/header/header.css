@@ -15,10 +15,60 @@
     justify-content: flex-end;
     flex-direction: row;
     width: auto;
+    padding: 20px;
+
 }
+
+.headerLeft{
+    flex: 3;
+}
+
+.headerRight {
+    flex: 1.75;
+}
+   
 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    height: 50px;
+    width: 500px;
+    background-color: var(--backgroundColor);
+    position: fixed;
+    border: solid px;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: var(--textFont);
+
+
+}
+li a {
+    display: block;
+    padding: 10px;
+
+    color: var(--darkColor);
+    text-decoration: none;
+}
+
+li {
+    float: left;
+    padding: 8px 5px 0px 10px;
+}
+
+li a:hover {
+    text-decoration: underline;
+    color: var(--highlight);
+}
+
+li.welcome {
+    float: right;
+    padding-right: 5px;
+
+}
+
+ /*ul {
     display: flex;
     flex-direction: row;
     gap: 20px;
     padding-right: 20px;
-}
+} */

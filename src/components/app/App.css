@@ -5,24 +5,37 @@
  @font-face {
     font-family: 'Monoton';
     src: url('../../../fonts_images/Monoton-Regular.ttf'); }
+        @font-face {
+            font-family: 'Black-ops-one';
+            src: url('../../../fonts_images/BlackOpsOne-Regular.ttf');
+        }
+    
+        @font-face {
+            font-family: 'Wallpoet';
+            src: url('../../../fonts_images/Wallpoet-Regular.ttf');
+        }
  
 /* temporary colour scheme and font styling card */
 :root{
-    --highlight: #ff8e72;
+    --highlight: #136207;
     --backgroundColor: #EFF0F2;
     --darkColor: #131200;
     --secondHighlight: #C2D8B9;
     --textFont: 'Ubuntu';
     --titleFont: 'Monoton';
+    --titleFont2: 'Black-ops-one';
+    --titleFont3: 'Wallpoet';
 
 }
 
 .App{
     background-color: var(--backgroundColor);
+    display: flex;
+    
 }
 
 h1{
-    font-family: var(--titleFont);
+    font-family: var(--titleFont3);
     font-size: 80px;
 }
 .searchBarContainer{
@@ -34,6 +47,7 @@ h1{
     justify-content: center;
     align-items: center;
     align-content: center;
+    
  
 }
 

@@ -3,8 +3,8 @@ import "./App.css";
 import SearchBarInput from "../searchBarInput/Input";
 import Button from "../button/button";
 import { useState } from "react";
-import AddPost from "../addPost/addPost";
-import Post from "../posts/post";
+import NewPost from "../newPost/newPost";
+import Posts from "../posts/posts";
 
 function App() {
   const [search, setSearch] = useState("");
@@ -24,18 +24,29 @@ function App() {
   }
 
   return (
+    <>
+    
+     <Header />
     <div className="app">
-      <Header />
+     
+
+    
       <div className="postsContainer">
         <div className="searchBarContainer">
+        
+          <h1> CodeMerge </h1>
+
           <SearchBarInput onChange={handleSearch} />
           <Button onClick={handleClick} text="click me" />
         </div>
-          <Post />
+         
       </div>
-      {/* second page begins here, maybe make a second component for the next page?*/}
-        <AddPost />
+       <Posts />
+      {/* second page begins here, maybe make a second component for the next page?  <NewPost />*/ }
+       
     </div>
+    <NewPost />
+    </>
   );
 }
 

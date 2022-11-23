@@ -1,6 +1,9 @@
-import "./addPost.css";
+import "./newPost.css";
 import Button from "../button/button";
-export default function AddPost(props) {
+
+
+
+export default function NewPost(props) {
   return (
     <div className="addPostsContainer">
          <div className="formContainer">
@@ -16,3 +19,4 @@ export default function AddPost(props) {
    
   );
 }
+
