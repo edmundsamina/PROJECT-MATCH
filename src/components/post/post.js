@@ -5,32 +5,21 @@ import '../images/blogImage.css';
 
 
 function Post(props) {
-    return (
-      <div className="post">
- <BlogImage  /> 
-    
-        
-          <div className="postInfo">
+  return (
+    <div className="post">
+      <BlogImage />
 
-            <div className="postCategories">
-              
-         <span className="postCat">JavaScript</span>
-          <span className="postCat">User01</span>
-         
-         </div>
-          <span className="postTitle">POST TITLE </span>
-          <hr/> 
-
-          <span className="postDate">Posted 1 hour ago</span>
+      <div className="postInfo">
+        <div className="postCategories">
         </div>
-   <p className="postDes"> sfdjghejgehjdvhfvsnv'lsdkvnd
-    sdvlkjfdnsglfknvfs'klvnsflksnfs'fksdfdsklf
-    sdcljsdnsfjsdfnsdjnfds
-    glfknvfs'klvnsflksnfs'fksdfdsklvfddd
-   </p>
-          </div>
-    ) 
+        <div className="postTitle">POST TITLE <span className="userStyle">by Marwa</span></div>
+      </div>
+      <p className="postDes">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+      </p>
+          <span className="postCat"><span className="stack">Stack:</span> Javascript, Potato, ...</span>
+          <p></p>
+    </div>
+  );
 }
-
 
 export default Post;

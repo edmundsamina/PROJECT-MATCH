@@ -7,7 +7,7 @@ input{
         border-radius: calc(var(--border-radius) * 1px);
         text-align: center;
         outline: transparent;
-        margin-bottom: 12px;
+        margin-bottom: 25px;
       
 
 }

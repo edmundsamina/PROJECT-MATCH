@@ -26,7 +26,6 @@ function App() {
   return (
     <div className="app">
      <Header/>
-    
 
       <div className="postsContainer">
         <div className="searchBarContainer">
@@ -34,7 +33,7 @@ function App() {
           <h1> CodeMerge </h1>
 
           <SearchBarInput onChange={handleSearch} />
-          <Button onClick={handleClick} text="click me" />
+          <Button onClick={handleClick} text="SEARCH" />
         </div>
         <Posts />
       </div>
