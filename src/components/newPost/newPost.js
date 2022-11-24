@@ -19,8 +19,9 @@ export default function NewPost(props) {
 
     function onChangeName(e){
         let text = e.target.value
-        
         setName(text)
+     
+
         console.log(name)
     }
     function onChangeTitle(e){
@@ -55,11 +56,13 @@ export default function NewPost(props) {
         let obj = {...payload,user_name:name,title:title,description:des,stack:stack}
         setPayload(obj)
         
+        console.log('button clicked')
         await fetch("http://localhost:3001/api/post",{method:'POST',headers:{'accept': 'application/json','content-type':'application/json'},
         body: JSON.stringify(payload)
         })
         .then(response => response.json())
         .then(response => console.log(JSON.stringify(response)))
+         e.target.reset() 
          
     }
     

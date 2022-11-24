@@ -12,10 +12,10 @@ function Post(props) {
       <div className="postInfo">
         <div className="postCategories">
         </div>
-        <div className="postTitle">{props.title}<span className="userStyle">by {props.user}</span></div>
+        <div className="postTitle">{props.title}<span className="userStyle"> - by {props.user} </span></div>
       </div>
       <p className="postDes">{props.description}</p>
-          <span className="postCat"><span className="stack">Stack:</span>{props.stack}</span>
+          <span className="postCat"><span className="stack"> Stack: </span>{props.stack}</span>
           <p></p>
     </div>
   );
