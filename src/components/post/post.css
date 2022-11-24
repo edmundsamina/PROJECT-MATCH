@@ -2,7 +2,7 @@
     width: 300px;
     margin: 0px 25px 40px 25px;
     /* border: 1px solid red; */
-    background-color: rgb(224, 221, 221);
+    background-color:#ffffff;
     padding: 10px;
     border-radius: 10px;
 }
@@ -14,7 +14,7 @@
 
 .userStyle{
     font-size: 18px;
-    color: grey;
+    color: #251605;
 }
 .stack{
     font-size: 14px;

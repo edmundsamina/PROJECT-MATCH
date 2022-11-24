@@ -11,13 +11,13 @@
             src: url('../../fonts_images/Wallpoet-Regular.ttf');
         }
  
-/* temporary colour scheme and font styling card */
+/* temporary colour scheme and font styling card #959ce8 #FBD1A2*/
 :root{
-    --highlight: #677F64;
-    --backgroundColor1: #EFF0F2;
-    --backgroundColor: #1b4baa;
-    --darkColor: #000000;
-    --secondHighlight: #e9f1ef;
+    --highlight:#f36471;
+    --backgroundColor1: #fff7f8 ;
+    --backgroundColor: #fff7f8;
+    --darkColor: #3F403F;
+    --secondHighlight:#959ce8;
     --textFont: 'Ubuntu';
     --titleFont: 'Monoton';
     --titleFont2: 'Black-ops-one';
@@ -37,10 +37,9 @@ body {
     
 }
 
-h1{
-    font-family: var(--titleFont3);
-    color: #111827;
-    font-size: 80px;
+.poster{
+    height: 400px;
+    width: 800px;
 }
 .searchBarContainer{
     background-color: var(--secondHighlight);

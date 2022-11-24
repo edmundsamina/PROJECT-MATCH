@@ -1,6 +1,6 @@
 
 .addPostsContainer{
-    background-color: blanchedalmond;
+    background-color: var(--backgroundColor1);
     height: 100vh;
     /* width: 100vw; */
     display: flex;

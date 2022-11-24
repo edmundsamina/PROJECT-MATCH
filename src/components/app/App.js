@@ -5,6 +5,8 @@ import Button from "../button/button";
 import { useState } from "react";
 import NewPost from "../newPost/newPost";
 import Posts from "../posts/posts";
+import Title from "../title/title";
+import poster from "../../fonts_images/background wallpaper.png"
 
 function App() {
   const [search, setSearch] = useState("");
@@ -25,24 +27,21 @@ function App() {
 
   return (
     <div className="app">
-     <Header/>
-
+      <Header />
       <div className="postsContainer">
-        <div className="searchBarContainer">
-        
-          <h1> CodeMerge </h1>
 
+        <div className="searchBarContainer">
+          
+          <Title img = {poster}/>
+         
           <SearchBarInput onChange={handleSearch} />
           <Button onClick={handleClick} text="SEARCH" />
         </div>
         <Posts />
       </div>
-      
-      {/* second page begins here, maybe make a second component for the next page?  <NewPost />*/ }
+      {/* second page begins here, maybe make a second component for the next page?  <NewPost />*/}
       <NewPost />
     </div>
-    
-   
   );
 }
 

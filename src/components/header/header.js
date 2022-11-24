@@ -1,5 +1,5 @@
 import "./header.css";
-import logo from "../../fonts_images/logo1.png";
+import logo from "../../fonts_images/logo.png";
 
 function Header(props) {
   return (
