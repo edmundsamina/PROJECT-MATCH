@@ -7,10 +7,11 @@ export default function Posts({data}) {
 
         <div className="posts">
       
+
             {data.map((item)=>{
                 return <Post title={item.title} user= {item.user_name} stack = {item.stack} description = {item.description}/>
             })}
-         
+  
         </div>
   )
           

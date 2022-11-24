@@ -1,6 +1,6 @@
 import "./newPost.css";
 import Button from "../button/button.js"
-import logo from "../../fonts_images/logo1.png"
+import newPost from "../../fonts_images/newPost.png";
 import {useState} from 'react'
 
 
@@ -72,7 +72,7 @@ export default function NewPost(props) {
 
 
             <div className="newPost-container">
-                <img className='newPostImage' src={logo} alt='logo'/>
+                <img className='newPostImage' src={newPost} alt='logo'/>
                   
                 <form >
                     <label> Username: </label>
