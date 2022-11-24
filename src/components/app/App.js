@@ -27,7 +27,7 @@ function App() {
     setData(response.payload)
     console.log(response.payload)
   }
-
+ 
   return (
     <div className="app">
       <Header />
