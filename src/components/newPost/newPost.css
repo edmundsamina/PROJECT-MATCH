@@ -1,4 +1,3 @@
-
 .addPostsContainer{
     background-color: var(--backgroundColor1);
     height: 100vh;
@@ -7,30 +6,66 @@
     align-content: center;
     justify-content: center;
 }
-.formContainer{
-    width: 1200px;
+ .newPost {
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+}
+
+.newPost-container {
+    border-radius: 5px;
+    background-color: oldlace;
+    padding: 50px 40px 50px 40px;
+    max-width: 1500px;
+    margin: auto;
     display: flex;
-    justify-content: center;
     align-items: center;
-    align-content: center;
+    border-radius: 15px;
 }
 
-h2{
-    font-size: 40px;
+.newPost-title {
+    color: pink;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    text-align: center;
+    justify-content: center;
+    font-size: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-weight: 600;
 }
 
-p{
+input[type=text],
+textarea {
+    width: 100%;
+    min-width: 200px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
     font-size: 20px;
-}
-.form{
-    display: flex;
-    height: 50%;
-    width: 50%;
-    flex-direction: column;
-    justify-content: space-around;
-    /* background-color: blueviolet; */
+    color: purple;
 }
 
-.textContact{
-    padding-right: 30px;
+.newPostImage {
+    height: 450px;
+    width: 450px;
+    max-width: 500px;
+    padding: 10px 50px 40px 10px;
+   
 }
+
+textarea {
+    height: 250px;
+}
+
+label {
+    font-size: 25px;
+    color: blue;
+}
+
+
+

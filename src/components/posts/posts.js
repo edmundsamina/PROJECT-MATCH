@@ -12,6 +12,11 @@ export default function Posts(props) {
             <Post/>
             <Post/>
             <Post/>
+             <Post/>
+              <Post/>
+               <Post/>
+                <Post/>
+                 <Post/>
         </div>
     )
 }
