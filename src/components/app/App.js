@@ -28,6 +28,7 @@ function App() {
      <Header/>
 
       <div className="postsContainer">
+        
         <div className="searchBarContainer">
         
           <h1> CodeMerge </h1>

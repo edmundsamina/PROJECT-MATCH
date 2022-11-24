@@ -43,16 +43,6 @@
 
 }
 
-.postDate {
-    font-family: var(--textFont);
-    font-style: italic;
-    font-size: 13px;
-    color: var(--darkColor);
-    margin-top: 15px;
-    font-weight: 300;
-
-}
-
 .postDes {
     font-family: var(--textFont);
     font-size: 14px;
