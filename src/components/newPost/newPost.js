@@ -9,61 +9,50 @@ export default function NewPost(props) {
     const [title,setTitle]=useState("")
     const [des,setDes]=useState("")
     const [stack,setStack]=useState("")
-    const [payload,setPayload]= useState({
-        user_name : null,
-        title : null ,
-        description : null, 
-        stack: null
+    // const [payload,setPayload]= useState({
+    //     user_name : null,
+    //     title : null ,
+    //     description : null, 
+    //     stack: null
     
-    })
+    // })
 
     function onChangeName(e){
         let text = e.target.value
         setName(text)
-     
 
-        console.log(name)
     }
     function onChangeTitle(e){
         let text = e.target.value
-        
         setTitle(text)
-        console.log(title)
     }
     function onChangeDes(e){
-        let text = e.target.value
-        
+        let text = e.target.value 
         setDes(text)
-        console.log(des)
+
     }
     function onChangeStack(e){
         let text = e.target.value
-        
         setStack(text)
-        console.log(stack)
+  
     }
 
     async function onClick(e){
-        
         e.preventDefault()
-        // let key = {
-        //     user_name : null,
-        //     title : null ,
-        //     description : null, 
-        //     stack: null
-        
-        // }
-        let obj = {...payload,user_name:name,title:title,description:des,stack:stack}
-        setPayload(obj)
+        let obj = {user_name:name,title:title,description:des,stack:stack}
+        // setPayload(obj)
         
         console.log('button clicked')
         await fetch("http://localhost:3001/api/post",{method:'POST',headers:{'accept': 'application/json','content-type':'application/json'},
-        body: JSON.stringify(payload)
+        body: JSON.stringify(obj)
         })
         .then(response => response.json())
         .then(response => console.log(JSON.stringify(response)))
-         e.target.reset() 
+       
          
+    }
+    function clearInput(){
+
     }
     
   return (
@@ -74,7 +63,7 @@ export default function NewPost(props) {
             <div className="newPost-container">
                 <img className='newPostImage' src={logo} alt='logo'/>
                   
-                <form >
+                <form onSubmit={clearInput} >
                     <label> Username: </label>
                     <input type="text" userName="userName" placeholder="Username" maxlength="20" required onChange={onChangeName}/>
 
