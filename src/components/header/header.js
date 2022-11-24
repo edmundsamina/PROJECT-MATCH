@@ -1,10 +1,21 @@
 import "./header.css";
 import logo from "../../fonts_images/logo.png";
 
+function reloadPage () {
+
+  window.location.reload()
+}
+
 function Header(props) {
+
+
   return (
     <nav className="header">
-    <img src={logo} alt="Hands on world"></img>
+
+    <img onClick={() => reloadPage()} 
+    src={logo} alt="Hands on world"></img>
+      
+      
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#profile">Profile</a></li>
