@@ -9,7 +9,8 @@
 
 .post:hover{
     /* border: 2px solid grey; */
-    box-shadow: 0 0 5px 5px var(--backgroundColor);
+    box-shadow: 0 0 5px 5px var(--highlight3);
+   
 }
 
 .userStyle{

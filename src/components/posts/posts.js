@@ -4,7 +4,9 @@ import Post from "../post/post";
 
 export default function Posts(props) {
     return (
+
         <div className="posts">
+      
             <Post/>
             <Post/>
             <Post/>
@@ -18,7 +20,9 @@ export default function Posts(props) {
                 <Post/>
                  <Post/>
         </div>
-    )
+  )
+        
+    
 }
 
 
