@@ -9,20 +9,23 @@ import Title from "../title/title";
 import poster from "../../fonts_images/background wallpaper.png"
 
 function App() {
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState();
+  const [data, setData] = useState([])
+
   function handleSearch(e) {
     let search = e.target.value;
     setSearch(search);
-    console.log(search);
+  
   }
 
   async function handleClick() {
+    console.log(search)
     const responseJSON = await fetch(
-      "http://localhost:3001/api/customer/search=$1",
-      [search]
+      `http://localhost:3001/api/post/?stack=${search}`
     );
     const response = await responseJSON.json();
-    console.log(response);
+    setData(response.payload)
+    console.log(response.payload)
   }
 
   return (
@@ -35,9 +38,9 @@ function App() {
           <Title img = {poster}/>
          
           <SearchBarInput onChange={handleSearch} />
-          <Button onClick={handleClick} text="SEARCH" />
+          <Button onClick={()=>{handleClick()}} text="SEARCH" />
         </div>
-        <Posts />
+        <Posts data = {data}/>
       </div>
       {/* second page begins here, maybe make a second component for the next page?  <NewPost />*/}
       <NewPost />
