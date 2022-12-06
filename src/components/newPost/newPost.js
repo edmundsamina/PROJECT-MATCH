@@ -3,6 +3,7 @@ import Button from "../button/button.js"
 import newPost from "../../fonts_images/newPost.png";
 import {useState} from 'react'
 
+const url = process.env.REACT_APP_BACKEND_URL ?? "http://localhost:3000";
 
 export default function NewPost(props) {
     const [name,setName] = useState("")
@@ -43,7 +44,7 @@ export default function NewPost(props) {
         // setPayload(obj)
         
         console.log('button clicked')
-        await fetch("http://localhost:3001/api/post",{method:'POST',headers:{'accept': 'application/json','content-type':'application/json'},
+        await fetch(`${url}/api/post`,{method:'POST',headers:{'accept': 'application/json','content-type':'application/json'},
         body: JSON.stringify(obj)
         })
         .then(response => response.json())
