@@ -8,6 +8,8 @@ import Posts from "../posts/posts";
 import Title from "../title/title";
 import poster from "../../fonts_images/background wallpaper.png"
 
+const url = process.env.REACT_APP_BACKEND_URL ?? "http://localhost:3000";
+
 function App() {
   const [search, setSearch] = useState();
   const [data, setData] = useState([])
@@ -21,7 +23,7 @@ function App() {
   async function handleClick() {
     console.log(search)
     const responseJSON = await fetch(
-      `http://localhost:3001/api/post/?stack=${search}`
+      `${url}/api/post/?stack=${search}`
     );
     const response = await responseJSON.json();
     setData(response.payload)
