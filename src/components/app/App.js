@@ -21,7 +21,6 @@ function App() {
   }
 
   async function handleClick() {
-    console.log(search)
     const responseJSON = await fetch(
       `${url}/api/post/?stack=${search}`
     );
