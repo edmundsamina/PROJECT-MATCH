@@ -21,7 +21,7 @@ function Header(props) {
         <li><a href="#profile">Profile</a></li>
         <li><a href="#posts"> Posts </a></li>
         <li><a href="#contact"> Contact </a></li>
-        <li className="welcome"><a href="#welcome"></a>        </li>
+        <li className="welcome"></li>
       </ul>
     </nav>
   );
