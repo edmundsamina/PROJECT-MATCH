@@ -2,7 +2,7 @@ import Header from "../header/header";
 import "./App.css";
 import SearchBarInput from "../searchBarInput/Input";
 import Button from "../button/button";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import NewPost from "../newPost/newPost";
 import Posts from "../posts/posts";
 import Title from "../title/title";
@@ -13,6 +13,16 @@ const url = process.env.REACT_APP_BACKEND_URL ?? "http://localhost:3000";
 function App() {
   const [search, setSearch] = useState();
   const [data, setData] = useState([])
+
+
+    useEffect(() => {
+        async function getData() {
+        const response = await fetch(`${url}/api/post/`);
+            const data = await response.json();
+            setData(data.payload);
+        }
+        getData();
+    }, [])
 
   function handleSearch(e) {
     let search = e.target.value;
