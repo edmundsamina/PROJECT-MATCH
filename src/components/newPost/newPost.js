@@ -2,6 +2,7 @@ import "./newPost.css";
 import Button from "../button/button.js";
 import newPost from "../../fonts_images/newPost.png";
 import { useState } from "react";
+import swal from 'sweetalert';
 
 const url = process.env.REACT_APP_BACKEND_URL ?? "http://localhost:3000";
 
@@ -51,8 +52,16 @@ export default function NewPost(props) {
     })
       .then((response) => response.json())
       .then((response) => console.log(JSON.stringify(response)));
+
+      setName("")
+      setTitle("")
+      setDes("")
+      setStack("")
+
+      swal("Great!", "You submitted a new project!", "success");
   }
-  function clearInput() {}
+  
+
 
   return (
     <div className="newPost">
@@ -61,9 +70,10 @@ export default function NewPost(props) {
       <div className="newPost-container">
         <img className="newPostImage" src={newPost} alt="logo" />
 
-        <form onSubmit={clearInput}>
+        <form >
           <label> Username: </label>
           <input
+            value = {name}
             type="text"
             userName="userName"
             placeholder="Username"
@@ -74,6 +84,7 @@ export default function NewPost(props) {
 
           <label> Title: </label>
           <input
+          value = {title}
             type="text"
             userName="title"
             placeholder="Project Title"
@@ -84,6 +95,7 @@ export default function NewPost(props) {
 
           <label> Stack: </label>
           <input
+          value = {stack}
             type="text"
             userName="stack"
             placeholder="Stack"
@@ -94,6 +106,7 @@ export default function NewPost(props) {
 
           <label> Describe your project: </label>
           <textarea
+          value = {des}
             userName="description"
             placeholder="Description..."
             maxlength="200"
