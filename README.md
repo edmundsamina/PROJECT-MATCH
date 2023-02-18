@@ -1,5 +1,5 @@
 
-# Project Match
+# Project Match - SPRINT 1
 
 For our project this week, we had to create an application that would enhance the experience 
 or solve a problem a bootcamper on a coding bootcamp might face.  
@@ -64,3 +64,32 @@ Start the server
 
  - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
  - [LOGO](https://www.canva.com/)
+
+
+
+# Project Match - SPRINT 2 - COMPLETE DESIGN OVERHAUL - *IN PROGRESS*
+
+The goal of this sprint is to improve the UI/UX experience, and seperate the app into multiple pages. The one page app will turn into 3 seperate pages, a landing page, a search page and a page where users can post looking for someone to collaborate on the project.
+
+
+
+## Authors
+
+- [Amina Edmunds](https://www.github.com/edmundsamina)
+
+
+# Project Match - SPRINT 3 *PENDING*
+
+The goal of this sprint is to add extra functionality to this project. Some features that will be added are -> 
+
+- Register
+- Log In
+- Log Out 
+- Edit Post 
+- Delete Post
+- Edit Profile
+
+
+## Authors
+
+- [Amina Edmunds](https://www.github.com/edmundsamina)
