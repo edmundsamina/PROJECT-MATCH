@@ -1,0 +1,22 @@
+.App{
+    height: 200vh;
+}
+
+.hero-section {
+background-color:  #959ce8;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.about-us-section{
+    width: 100%;
+    height: 50%;
+
+}
+
+  

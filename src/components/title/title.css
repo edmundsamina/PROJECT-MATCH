@@ -1,6 +1,5 @@
-img{
-    width: 30%;
-    height: 30%;
-    
-
+.hero-img{
+    height: 70%;
+    margin-top: 10vh;
 }
+

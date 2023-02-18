@@ -1,5 +1,6 @@
 .posts{
-
+height: 70%;
+background-color: aqua;
 display: grid;
 grid-template-columns: auto auto auto auto;
 padding: 80px;

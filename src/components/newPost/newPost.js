@@ -6,42 +6,41 @@ import swal from 'sweetalert';
 
 const url = process.env.REACT_APP_BACKEND_URL ?? "http://localhost:3000";
 
-export default function NewPost(props) {
-  const [name, setName] = useState("");
-  const [title, setTitle] = useState("");
-  const [des, setDes] = useState("");
-  const [stack, setStack] = useState("");
-  // const [payload,setPayload]= useState({
-  //     user_name : null,
-  //     title : null ,
-  //     description : null,
-  //     stack: null
+export default function NewPost() {
 
-  // })
+
+  const [payload,setPayload]= useState({
+      user_name : null,
+      title : null ,
+      description : null,
+      stack: null
+
+  })
 
   function onChangeName(e) {
     let text = e.target.value;
-    setName(text);
+    setPayload({...payload,  user_name : text });
   }
   function onChangeTitle(e) {
     let text = e.target.value;
-    setTitle(text);
+    setPayload({ ...payload, title : text } );
   }
   function onChangeDes(e) {
     let text = e.target.value;
-    setDes(text);
+    setPayload({...payload,  description : text } );
   }
   function onChangeStack(e) {
     let text = e.target.value;
-    setStack(text);
+    setPayload( { ...payload, stack : text } );
   }
 
   async function onClick(e) {
     e.preventDefault();
-    let obj = { user_name: name, title: title, description: des, stack: stack };
+    let obj = { user_name: payload.user_name, title: payload.title, description: payload.description, stack: payload.stack };
     // setPayload(obj)
 
     console.log("button clicked");
+
     await fetch(`${url}/api/post`, {
       method: "POST",
       headers: {
@@ -53,12 +52,6 @@ export default function NewPost(props) {
       .then((response) => response.json())
       .then((response) => console.log(JSON.stringify(response)));
 
-      setName("")
-      setTitle("")
-      setDes("")
-      setStack("")
-
-      swal("Great!", "You submitted a new project!", "success");
   }
   
 
@@ -73,7 +66,7 @@ export default function NewPost(props) {
         <form >
           <label> Username: </label>
           <input
-            value = {name}
+            value = {payload.user_name}
             type="text"
             userName="userName"
             placeholder="Username"
@@ -84,7 +77,7 @@ export default function NewPost(props) {
 
           <label> Title: </label>
           <input
-          value = {title}
+          value = {payload.title}
             type="text"
             userName="title"
             placeholder="Project Title"
@@ -95,7 +88,7 @@ export default function NewPost(props) {
 
           <label> Stack: </label>
           <input
-          value = {stack}
+          value = {payload.stack}
             type="text"
             userName="stack"
             placeholder="Stack"
@@ -106,7 +99,7 @@ export default function NewPost(props) {
 
           <label> Describe your project: </label>
           <textarea
-          value = {des}
+          value = {payload.description}
             userName="description"
             placeholder="Description..."
             maxlength="200"

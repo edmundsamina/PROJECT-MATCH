@@ -1,61 +1,20 @@
-import Header from "../header/header";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import SearchBarInput from "../searchBarInput/Input";
-import Button from "../button/button";
-import { useState, useEffect } from "react";
-import NewPost from "../newPost/newPost";
-import Posts from "../posts/posts";
-import Title from "../title/title";
-import poster from "../../fonts_images/background wallpaper.png"
-
-const url = process.env.REACT_APP_BACKEND_URL ?? "http://localhost:3000";
+import Home from "../../pages/Home";
+import SearchPage from "../../pages/Search";
+import PostPage from "../../pages/Post";
 
 function App() {
-  const [search, setSearch] = useState();
-  const [data, setData] = useState([])
-
-
-    useEffect(() => {
-        async function getData() {
-        const response = await fetch(`${url}/api/post/`);
-            const data = await response.json();
-            setData(data.payload);
-        }
-        getData();
-    }, [])
-
-  function handleSearch(e) {
-    let search = e.target.value;
-    setSearch(search);
   
-  }
-
-  async function handleClick() {
-    const responseJSON = await fetch(
-      `${url}/api/post/?stack=${search}`
-    );
-    const response = await responseJSON.json();
-    setData(response.payload)
-    console.log(response.payload)
-  }
- 
   return (
-    <div className="app">
-      <Header />
-      <div className="postsContainer">
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/search" element={<SearchPage/>}/>
+      <Route  path="/post" element={<PostPage/>}/>
+    </Routes>
+    
 
-        <div className="searchBarContainer">
-          
-          <Title img = {poster}/>
-         
-          <SearchBarInput onChange={handleSearch} />
-          <Button onClick={()=>{handleClick()}} text="SEARCH" />
-        </div>
-        <Posts data = {data}/>
-      </div>
-      {/* second page begins here, maybe make a second component for the next page?  <NewPost />*/}
-      <NewPost />
-    </div>
+  
   );
 }
 

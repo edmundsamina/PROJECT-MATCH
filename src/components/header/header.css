@@ -2,33 +2,26 @@ nav {
 position: fixed;
 display: flex;
 justify-content: space-between;
+align-items: center;
 background-color: var(--backgroundColor1);
 width: 100%;
-height: auto;
-padding: 10px 0 10px 30px;
-border-bottom: 2px solid grey;
+height: 10vh;
 
 }
-/* .header {
-    display: flex;
-    
-/*     justify-content: flex-end;
-    flex-direction: row;
-    width: 100%;
-    padding: 0.5vh; */
 
-/*} 
-*/
 
-nav > img {
+ /* navbar styling */
+
+ nav > img {
     width: 100px;
     height: 100px;
 }
    
-ul {
+.nav-links {
     list-style-type: none;
     font-family: var(--textFont);
     display: inline;
+    padding-right: 30px;
 }
 li a {
     display: block;
@@ -57,3 +50,4 @@ li.welcome {
     font-size: 26px;
 }
 
+/* footer styling */
