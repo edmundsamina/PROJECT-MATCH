@@ -1,5 +1,4 @@
 import "./post.css";
-import BlogImage from "../images/blogImage";
 import '../images/blogImage.css';
 
 
@@ -7,16 +6,16 @@ import '../images/blogImage.css';
 function Post(props) {
   return (
     <div className="post">
-      <BlogImage />
 
       <div className="postInfo">
-        <div className="postCategories">
-        </div>
-        <div className="postTitle">{props.title}<span className="userStyle"> - by {props.user} </span></div>
+       
+        <h4 className="postTitle">{props.title}</h4>
+        <p className="postDes">{props.description}</p>
+      <span className="stack"> Stack:{props.stack} </span>
+
       </div>
-      <p className="postDes">{props.description}</p>
-          <span className="postCat"><span className="stack"> Stack: </span>{props.stack}</span>
-          <p></p>
+     
+          {/* <p><span className="userStyle"> - by {props.user} </span></p> */}
     </div>
   );
 }

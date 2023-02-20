@@ -1,5 +1,5 @@
 import "./header.css";
-import logo from "../../fonts_images/logo.png";
+import logo from "../../fonts_images/logo2.png";
 
 function reloadPage () {
 

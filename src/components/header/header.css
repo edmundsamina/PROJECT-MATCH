@@ -1,11 +1,11 @@
 nav {
+    z-index: 2;
 position: fixed;
 display: flex;
 justify-content: space-between;
 align-items: center;
-background-color: var(--backgroundColor1);
+padding: 10px;
 width: 100%;
-height: 10vh;
 
 }
 
@@ -14,27 +14,33 @@ height: 10vh;
 
  nav > img {
     width: 100px;
-    height: 100px;
+        padding-left: 40px;
+
+ 
 }
    
 .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;    
     list-style-type: none;
+    width: 20%;
+    padding-right: 40px;
     font-family: var(--textFont);
-    display: inline;
-    padding-right: 30px;
 }
 li a {
     display: block;
-    padding: 10px;
-    color: var(--darkColor);
     text-decoration: none;
+    color: whitesmoke;
+
 }
 
 li {
+
    display: inline;
      float: left;
-     font-size: 25px;
-    padding: 8px 5px 0px 10px;
+     font-size: 0.8rem;
 
 }
 
@@ -43,11 +49,5 @@ li a:hover {
     color: var(--highlight);
 }
 
-li.welcome {
-    float: right;
-    padding-right: 50px;
-    font-weight: bolder;
-    font-size: 26px;
-}
 
-/* footer styling */
+

@@ -57,13 +57,10 @@ export default function NewPost() {
 
 
   return (
-    <div className="newPost">
-      <h2 className="newPost-title">New Project</h2>
-
+  
       <div className="newPost-container">
-        <img className="newPostImage" src={newPost} alt="logo" />
 
-        <form >
+        <form className="form">
           <label> Username: </label>
           <input
             value = {payload.user_name}
@@ -110,6 +107,6 @@ export default function NewPost() {
           <Button className="button" onClick={onClick} />
         </form>
       </div>
-    </div>
+  
   );
 }

@@ -1,10 +1,16 @@
 .search-container{
     display: flex;
     flex-direction: column;
+    background-color: #0a0013a7;
+    align-items: center;
+    justify-content: center;
     min-height: 100vh;
-    height: 300vh;
+   
 }
 
+.search-bar-container{
+    margin-top: 25vh;
+}
 .search-bar-container, .search-bar-input{
     display: flex;
     flex-direction: column;
