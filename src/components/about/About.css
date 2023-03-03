@@ -1,0 +1,44 @@
+.about-us-grid{
+height: 100%;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.about-us-img{
+    height: 100%;
+  }
+    
+.about-us-card{
+    width: 75%;
+    height: 30%;
+}
+
+.about-us-left, .about-us-right{
+    font-family: var(--textFont);
+    gap: 20px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 85%;
+    padding: 50px;
+}
+
+.about-us-left{
+align-self: flex-start;
+}
+
+.about-us-right{
+align-self: flex-end;
+}
+
+.grid-a, .grid-d{
+    align-self: flex-start;
+}
+
+.grid-b, .grid-c{
+    align-self: flex-end;
+}

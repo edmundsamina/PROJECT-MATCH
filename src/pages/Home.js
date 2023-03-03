@@ -1,6 +1,7 @@
 import poster from "../fonts_images/logotext.png";
 import Title from "../components/title/title.js";
-import rocket from '../fonts_images/Rocket_illustra.png'
+import AboutUs from "../components/about/About";
+import Testimonies from "../components/testimonies/Testimonies";
 import './home.css'
 export default function Home() {
   return (
@@ -8,11 +9,13 @@ export default function Home() {
           <section className="hero-section">
           <div className="hero-logo">
             <Title img={poster} />
+            <a href="#about"><div class="arrow"></div></a>
             </div>
           </section>
           <section className="about-us-section">
-            <img className="about-us-img" src={rocket} alt =" flying rocket"/>
+          <AboutUs/>
           </section>
+          <Testimonies/>
      
     </div>
   );

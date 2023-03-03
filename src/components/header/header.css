@@ -40,12 +40,12 @@ li {
 
    display: inline;
      float: left;
-     font-size: 0.8rem;
+     font-size: 1.2rem;
+     font-weight: 100;
 
 }
 
 li a:hover {
-    text-decoration: underline;
     color: var(--highlight);
 }
 

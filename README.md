@@ -1,4 +1,3 @@
-
 # Project Match - SPRINT 1
 
 For our project this week, we had to create an application that would enhance the experience 

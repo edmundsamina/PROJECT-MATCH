@@ -1,0 +1,100 @@
+.testimonies-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 180vh;
+}
+
+.testimonies-container-one,
+.testimonies-container-two {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  width: 90%;
+}
+
+.testimonies-container-one {
+  height: 50%;
+}
+
+.testimonies-container-two {
+  height: 35%;
+}
+
+.testomonies-container-one-text-card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background: rgba(0, 0, 0, 0.17);
+  font-family: var(--textFont);
+  padding: 30px;
+  color: whitesmoke;
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15.6px);
+  -webkit-backdrop-filter: blur(15.6px);
+  width: 45%;
+  height: 80%;
+}
+
+.testomonies-img {
+  width: 45%;
+}
+
+.testomonies {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: rgba(0, 0, 0, 0.17);
+  font-family: var(--textFont);
+  padding: 30px;
+  color: whitesmoke;
+  border-radius: 8px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15.6px);
+  -webkit-backdrop-filter: blur(15.6px);
+  width: 100%;
+  height: 100%;
+}
+
+.testomonies-container-one-text-card > button{
+  width: 30%;
+  padding: 10px;
+  background-color: var(--highlight);
+  border: 1px solid var(--highlight);
+  border-radius: 5px;
+  color: whitesmoke;
+}
+
+
+.card-container{
+  display: flex;
+  gap: 30px;
+height: 90%;
+height: 90%;
+
+}
+
+
+.testimony-card{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+
+
+
+.testomonies > h3, .testomonies-container-one-text-card > h4 {
+  font-size: 2rem;
+  border-left: 2px solid var(--highlight);
+  padding-left: 15px;
+  line-height: 1;
+}
+
+.testomonies > h3 > span, .testomonies-container-one-text-card > h4 > span{
+  font-size: 1rem;
+  font-weight: 100;
+}
