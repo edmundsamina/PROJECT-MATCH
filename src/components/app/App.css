@@ -1,12 +1,16 @@
+
 @font-face {
-  font-family: "Ubuntu";
-  src: url("../../fonts_images/UbuntuMono-Regular.ttf");
+  font-family: "Changa";
+  src: url("../../fonts_images/Changa/Changa-VariableFont_wght.ttf");
 }
 
 @font-face {
-  font-family: "Q";
-  src: url("../../fonts_images/Questrial-Regular.ttf");
+  font-family: "Exo";
+  src: url("../../fonts_images/Exo_2/Exo2-VariableFont_wght.ttf");
 }
+
+
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -64,8 +68,8 @@ p, h1, h2, h3, h4, h5, h6 {
   --backgroundColor:hsl(274, 100%, 6%);
   --darkColor: #3f403f;
   --secondHighlight: hsl(235, 64%, 75%);
-  --textFont: "Ubuntu";
-  --titleFont2: "Q";
+  --textFont: "Exo";
+  --titleFont: "Changa";
 }
 
 body {
@@ -86,13 +90,13 @@ body {
   background-image:
   radial-gradient(at 42% 38%, hsla(235,100%,82%,0.5) 0px, transparent 50%),
   radial-gradient(at 50% 58%, hsla(235,56%,17%,0.5) 0px, transparent 50%),
-  radial-gradient(at 36% 19%, hsla(354,100%,68%,1) 0px, transparent 50%),
+  radial-gradient(at 36% 19%, rgba(255, 92, 108, 0.489) 0px, transparent 50%),
   radial-gradient(at 90% 16%, hsla(235,100%,82%,1) 0px, transparent 50%),
   radial-gradient(at 38% 73%, hsla(355,100%,93%,1) 0px, transparent 50%),
   radial-gradient(at 74% 66%, hsla(340,100%,76%,1) 0px, transparent 50%),
   radial-gradient(at 67% 78%, hsla(235,57%,17%,1) 0px, transparent 50%),
   radial-gradient(at 89% 74%, hsla(242,100%,70%,1) 0px, transparent 50%),
-  radial-gradient(at 32% 86%, hsla(343,100%,76%,1) 0px, transparent 50%);
+  radial-gradient(at 32% 86%, rgba(255, 133, 168, 0.212) 0px, transparent 50%);
 }
 
 
@@ -106,8 +110,7 @@ body {
   
 .postsContainer {
   background-color: var(--backgroundColor1);
-  /*     height: 100vh;
-    width: 90vw; */
+
   display: flex;
   flex-direction: column;
   align-items: center;
