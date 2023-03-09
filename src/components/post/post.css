@@ -1,17 +1,15 @@
 .post {
     width: 100%;
-    padding: 10px;
+    padding: 30px;
     background: rgba(0, 0, 0, 0.27);
     font-family: var(--textFont);
-    padding: 30px;
     color: whitesmoke;
     border-radius: 8px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    border-left: 2px solid var(--highlight);
+
     backdrop-filter: blur(15.6px);
     -webkit-backdrop-filter: blur(15.6px);
-
-
-   
 }
 
 .post:hover{
@@ -25,15 +23,20 @@
     
 }
 .stack{
-    font-size: 18px;
-   
+    font-size: 0.8rem;
+word-spacing: 3px; 
+letter-spacing: 2px; 
+font-weight: 200; 
    
 }
 
 .postInfo {
     display: flex;
     flex-direction: column;
+    color: whitesmoke;
+    gap: 20px;
     justify-content: flex-start;
+    align-items: flex-start;
     height: 100%;
     width: 100%;
 }
@@ -42,25 +45,25 @@
     font-family: var(--textFont);
     font-size: 15px;
     color: var(--darkColor);
-    line-height: 20px;
-    margin-top: 20px;
-    margin-right: 10px;
     font-style: italic;
 }
 
 .postTitle {
-    font-family: var(--textFont);
-    font-size: 30px;
-    margin-top: 15px;
+    max-width: 90%;
+    font-family: var(--titleFont);
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-overflow: ellipsis;
+    overflow:hidden;
+  white-space: nowrap;
 
 }
 
 .postDes {
     font-family: var(--textFont);
+    font-weight: 200;
     font-size: 16px;
-    color: var(--darkColor);
-    line-height: 20px;
-    margin-top: 30px;
+    color: whitesmoke;
     
-
 }

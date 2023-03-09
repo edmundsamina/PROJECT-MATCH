@@ -36,17 +36,24 @@ export default function SearchPage() {
   return (
     <div className="search-container">
     <div className="search-bar-container">
+
+
     <SearchBarInput onChange={handleSearch} />
       <Button
         onClick={() => {
           handleClick();
         }}
-        text="SEARCH"
+        text="search-button"
       />
     </div>
      
 
-      <Posts data={data} />
+    { data ?  <Posts data={data} /> : <div className="posts">
+      Loading...
+    </div>
+
+}
+     
     </div>
   );
 }

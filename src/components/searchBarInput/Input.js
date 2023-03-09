@@ -1,9 +1,8 @@
-import "./input.css";
 function SearchBarInput(props) {
   return (
-    <div className="search-bar-input">
-      <input className="search-input"onChange={props.onChange} />
-    </div>
+
+      <input className="search-bar-input" placeholder= "Search By Tech Stack" onChange={props.onChange} />
+    
   );
 }
 

@@ -27,7 +27,7 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  background: rgba(0, 0, 0, 0.17);
+  background: rgba(0, 0, 0, 0.251);
   font-family: var(--textFont);
   padding: 30px;
   color: whitesmoke;
@@ -47,7 +47,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background: rgba(0, 0, 0, 0.17);
+  background: rgba(0, 0, 0, 0.251);
   font-family: var(--textFont);
   padding: 30px;
   color: whitesmoke;
