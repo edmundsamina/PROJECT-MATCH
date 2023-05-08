@@ -19,14 +19,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "webpack --mode=production --node-env=production",
+    "build": "react-scripts build",
     "test": "react-scripts test",
-    "webpack": "webpack --config prod.config.js",
-    "eject": "react-scripts eject",
-    "build:dev": "webpack --mode=development",
-    "build:prod": "webpack --mode=production --node-env=production",
-    "watch": "webpack --watch",
-    "serve": "webpack serve"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
