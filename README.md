@@ -1,3 +1,6 @@
+![Logo](src/fonts_images/wallpaper.png)
+
+
 # Project Match - SPRINT 1
 
 For our project this week, we had to create an application that would enhance the experience 
@@ -15,7 +18,7 @@ https://user-images.githubusercontent.com/107138590/236793930-f6aa5730-032a-4fa7
 
 
 
-![Logo](src/fonts_images/wallpaper.png)
+
 
 ## Color Reference
 
@@ -76,9 +79,7 @@ The goal of this sprint is to improve the UI/UX experience, and seperate the app
 
 
 
-
-https://user-images.githubusercontent.com/107138590/236793521-47d26989-68da-4fa2-92ab-ba44268efb0e.mp4
-
+https://user-images.githubusercontent.com/107138590/236794991-306af7e5-ecd0-44b5-b7c6-7545cac90fe4.mp4
 
 
 
@@ -92,11 +93,12 @@ https://user-images.githubusercontent.com/107138590/236793521-47d26989-68da-4fa2
 The goal of this sprint is to add extra functionality to this project. Some features that will be added are -> 
 
 - Register
+- Light/Dark Mode
 - Log In
 - Log Out 
 - Edit Post 
 - Delete Post
-- Edit Profile
+
 
 
 ## Authors
