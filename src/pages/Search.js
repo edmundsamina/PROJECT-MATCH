@@ -6,15 +6,19 @@ import './search.css'
 
 export default function SearchPage() {
   const [search, setSearch] = useState();
-  const [data, setData] = useState([]);
+  const [data, setData] = useState(null);
 
-  useEffect(() => {
+  useEffect(() => { 
     async function getData() {
       const response = await fetch(
         `${process.env.REACT_APP_BACKEND_URL}/api/post/`
       );
       const data = await response.json();
-      setData(data.payload);
+      setTimeout(()=> {
+        setData(data.payload);
+
+      }, 2000)
+      console.log(data)
     }
     getData();
   }, []);
@@ -43,14 +47,16 @@ export default function SearchPage() {
         onClick={() => {
           handleClick();
         }}
-        text="search-button"
+        className="search-button"
+        text="search"
       />
     </div>
      
 
-    { data ?  <Posts data={data} /> : <div className="posts">
-      Loading...
-    </div>
+    { data ?  <Posts data={data} /> : <div className="empty-posts">
+    <div class="spinner">
+    <div class="spinner1"></div>
+</div> </div>
 
 }
      

@@ -1,8 +1,8 @@
 import "./newPost.css";
 import Button from "../button/button.js";
-import newPost from "../../fonts_images/newPost.png";
 import { useState } from "react";
 import swal from 'sweetalert';
+import { motion } from "framer-motion";
 
 const url = process.env.REACT_APP_BACKEND_URL ?? "http://localhost:3000";
 
@@ -37,9 +37,8 @@ export default function NewPost() {
   async function onClick(e) {
     e.preventDefault();
     let obj = { user_name: payload.user_name, title: payload.title, description: payload.description, stack: payload.stack };
-    // setPayload(obj)
 
-    console.log("button clicked");
+     swal('Thanks for submitting a post!')
 
     await fetch(`${url}/api/post`, {
       method: "POST",
@@ -52,14 +51,25 @@ export default function NewPost() {
       .then((response) => response.json())
       .then((response) => console.log(JSON.stringify(response)));
 
+      setPayload({
+        user_name : '',
+        title : '' ,
+        description : '',
+        stack: ''
+  
+    })
   }
   
 
 
   return (
   
-      <div className="newPost-container">
-
+      <motion.div 
+      initial={{opacity: 0} }
+        animate={{opacity: 1} }
+        transition={{ duration: 0.5 }} 
+      className="newPost-container">
+     
         <form className="form">
           <label> Username: </label>
           <input
@@ -104,9 +114,9 @@ export default function NewPost() {
             onChange={onChangeDes}
           ></textarea>
 
-          <Button className="button" onClick={onClick} />
+          <Button className="newPost-button" onClick={onClick} text="POST"/>
         </form>
-      </div>
+      </motion.div>
   
   );
 }

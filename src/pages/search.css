@@ -51,3 +51,36 @@
   background-color:  var(--highlight3);
   box-shadow: none;
 }
+
+.empty-posts{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 80px;
+    min-height: 80vh;
+}
+
+.spinner {
+    background-image: linear-gradient(var(--highlight)35%,rgb(255, 255, 255));
+    width: 150px;
+    height: 150px;
+    animation: spinning82341 1.7s linear infinite;
+    text-align: center;
+    border-radius: 100px;
+    filter: blur(1px);
+    box-shadow: 0px -5px 20px 0px rgb(255, 255, 255), 0px 5px 20px 0px var(--highlight);
+  }
+  
+  .spinner1 {
+    background-color: rgb(25, 12, 35);
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    filter: blur(10px);
+  }
+  
+  @keyframes spinning82341 {
+    to {
+      transform: rotate(360deg);
+    }
+  }

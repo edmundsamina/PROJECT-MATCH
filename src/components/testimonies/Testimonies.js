@@ -2,6 +2,8 @@ import "./Testimonies.css";
 import astro from "../../fonts_images/Male and female astronauts dancing.png";
 import TestimoniesCard from "./TestimonyCard";
 import victoria from "../../fonts_images/victoria.png";
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 const testimonyObject = [
   {
@@ -38,9 +40,21 @@ const testimonyObject = [
 ];
 
 function Testimonies() {
+  const ref = useRef(null);
+  const inView = useInView(ref, {
+    threshold: 0.5, // When to trigger the animation
+    once: true, // Only trigger once
+  });
+
   return (
     <section className="testimonies-section">
-      <div className="testimonies-container-one">
+      <motion.div
+        ref={ref}
+        initial={{opacity: 0} }
+        animate={inView ? {opacity: 1} : {opacity: 0}}
+        transition={{ duration: 1 }}
+        className="testimonies-container-one"
+      >
         <div className="testomonies-container-one-text-card">
           <h4>
             Why You Should Get Involved! <br />
@@ -57,9 +71,7 @@ function Testimonies() {
             and any relevant GitHub links if applicable. This allows other users
             to see what projects are available and identify which ones align
             with their own interests and skills. Additionally, users can search
-            for projects by tech stack. This is helpful for those who have a
-            particular skill or interest they want to utilize, or for those who
-            are interested in learning a new technology. 
+            for projects by tech stack.
           </p>
           <button>Explore More</button>
         </div>
@@ -68,8 +80,13 @@ function Testimonies() {
           src={astro}
           alt="two people flying through space"
         />
-      </div>
-      <div className="testimonies-container-two">
+      </motion.div>
+      <motion.div
+        ref={ref}
+        initial={{opacity: 0} }
+        animate={inView ? {opacity: 1} : {opacity: 0}}
+        transition={{ duration: 0.5 }}
+     className="testimonies-container-two">
         <div className="testomonies">
           <h3>
             What Our Customers Say
@@ -80,7 +97,7 @@ function Testimonies() {
             {testimonyObject.map((testimony) => {
               return (
                 <TestimoniesCard
-                occupation={testimony.occupation}
+                  occupation={testimony.occupation}
                   testimony={testimony.testimony}
                   img={testimony.img}
                   name={testimony.name}
@@ -89,7 +106,7 @@ function Testimonies() {
             })}
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

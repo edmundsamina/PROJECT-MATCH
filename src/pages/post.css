@@ -1,6 +1,19 @@
 .post-page{
     height: 100vh;
+    background-color: hsla(273, 100%, 4%, 0.793);
     display: flex;
     align-content: center;
     justify-content: center;
+    gap: 50px;
+}
+
+.post-image{
+    height: 30%;
+    margin-top: 15vh;
+    padding-bottom: 10px;
+}
+
+.img-two{
+    align-self: flex-end;
+
 }

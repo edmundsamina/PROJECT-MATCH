@@ -2,7 +2,7 @@ import "./header.css";
 import logo from "../../fonts_images/logo2.png";
 
 function Header(props) {
-
+ 
 
   return (
     <nav className="header">

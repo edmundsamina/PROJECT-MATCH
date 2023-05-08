@@ -1,4 +1,4 @@
-import poster from "../fonts_images/logotext.png";
+import poster from "../fonts_images/logotext2.png";
 import Title from "../components/title/title.js";
 import AboutUs from "../components/about/About";
 import Testimonies from "../components/testimonies/Testimonies";
