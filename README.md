@@ -1,3 +1,6 @@
+![Logo](src/fonts_images/wallpaper.png)
+
+
 # Project Match - SPRINT 1
 
 For our project this week, we had to create an application that would enhance the experience 
@@ -11,7 +14,11 @@ to enable people to connect and collaborate on projects together.
 This is our MVP, so all you can do is search for projects by stack, and also post a project.
 
 
-![Logo](src/fonts_images/wallpaper.png)
+https://user-images.githubusercontent.com/107138590/236793930-f6aa5730-032a-4fa7-b225-c1fa39450330.mp4
+
+
+
+
 
 ## Color Reference
 
@@ -66,9 +73,13 @@ Start the server
 
 
 
-# Project Match - SPRINT 2 - COMPLETE DESIGN OVERHAUL - *IN PROGRESS*
+# Project Match - SPRINT 2 - COMPLETE DESIGN OVERHAUL
 
 The goal of this sprint is to improve the UI/UX experience, and seperate the app into multiple pages. The one page app will turn into 3 seperate pages, a landing page, a search page and a page where users can post looking for someone to collaborate on the project.
+
+
+
+https://user-images.githubusercontent.com/107138590/236794991-306af7e5-ecd0-44b5-b7c6-7545cac90fe4.mp4
 
 
 
@@ -82,11 +93,12 @@ The goal of this sprint is to improve the UI/UX experience, and seperate the app
 The goal of this sprint is to add extra functionality to this project. Some features that will be added are -> 
 
 - Register
+- Light/Dark Mode
 - Log In
 - Log Out 
 - Edit Post 
 - Delete Post
-- Edit Profile
+
 
 
 ## Authors
