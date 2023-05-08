@@ -11,6 +11,10 @@ to enable people to connect and collaborate on projects together.
 This is our MVP, so all you can do is search for projects by stack, and also post a project.
 
 
+https://user-images.githubusercontent.com/107138590/236793930-f6aa5730-032a-4fa7-b225-c1fa39450330.mp4
+
+
+
 ![Logo](src/fonts_images/wallpaper.png)
 
 ## Color Reference
@@ -66,9 +70,15 @@ Start the server
 
 
 
-# Project Match - SPRINT 2 - COMPLETE DESIGN OVERHAUL - *IN PROGRESS*
+# Project Match - SPRINT 2 - COMPLETE DESIGN OVERHAUL
 
 The goal of this sprint is to improve the UI/UX experience, and seperate the app into multiple pages. The one page app will turn into 3 seperate pages, a landing page, a search page and a page where users can post looking for someone to collaborate on the project.
+
+
+
+
+https://user-images.githubusercontent.com/107138590/236793521-47d26989-68da-4fa2-92ab-ba44268efb0e.mp4
+
 
 
 
